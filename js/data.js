@@ -301,7 +301,7 @@ const PROJECTS = [
     ],
     mainImageSlug: 'picture/fk-this-job/main.png',
     trailerID:     'mSV1teYZh-c',
-    itchURL:       'placeholder',
+    itchURL:       'https://artfx-school.itch.io/fuck-this-job',
     steamURL:      'placeholder',
     gallery: [
       /* — Autre — */
