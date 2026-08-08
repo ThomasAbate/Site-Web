@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────────────────────────────────
+# .assetsignore — fichiers/dossiers exclus de l'upload Cloudflare Workers Assets
+# NOTE : .gitignore n'a AUCUN effet sur Wrangler, ce fichier est le seul lu.
+# Syntaxe identique à .gitignore (patterns gitignore-style).
+# ─────────────────────────────────────────────────────────────────────────
+
+# Contrôle de version — jamais servi en prod, et .git contenait le pack
+# de 112 MiB qui fait planter le build ("Asset too large")
+.git
+.gitattributes
+.gitignore
+
+# Config de déploiement Cloudflare — pas un asset statique
+.assetsignore
+wrangler.jsonc
+wrangler.toml
+
+# Outils / éditeurs — config locale, rien à faire en prod
+.vscode
+.claude
+
+# Dépendances Node — regénérées au build, jamais à déployer telles quelles
+node_modules
+package.json
+package-lock.json
+
+# Docs internes / notes de dev non référencées par le site
+README.md
+picture/Naming Convention.txt
