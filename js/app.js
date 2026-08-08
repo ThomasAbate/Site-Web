@@ -1043,6 +1043,18 @@ function initPageTransitions() {
     }
   });
 
+  /* Réinitialise l'overlay si la page est restaurée depuis le bfcache (ex: bouton
+     "Retour" du navigateur). Sans ça, une page quittée pendant le fondu ".leaving"
+     est restaurée figée dans son état opaque + pointer-events:all, ce qui bloque
+     tous les clics et donne l'impression que le site est cassé. */
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) {
+      overlay.classList.remove('leaving');
+      overlay.style.pointerEvents = 'none';
+      overlay.style.opacity = '0';
+    }
+  });
+
   document.addEventListener('click', e => {
     const link = e.target.closest('a');
     if (!link) return;
