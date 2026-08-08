@@ -51,6 +51,10 @@
      engineLogo:    (optionnel) Chemin du logo du moteur affiché dans la sidebar (string)
                     → Défaut si absent : 'picture/icons-unreal-engine-500.png'
 
+     wip:           (optionnel, boolean) true = affiche un badge "Work in Progress"
+                    sur la carte du projet et sur sa page de détail
+                    → Défaut si absent : false (pas de badge)
+
      gallery:       Tableau d'images pour le carrousel de la page projet
                     → Chaque image : { slug: 'chemin/vers/image.png', title: 'Légende' }
                     → [] = galerie vide (section galerie cachée)
@@ -309,6 +313,7 @@ const PROJECTS = [
     trailerID:     null,
     engineName:    'Roblox Studio',
     engineLogo:    'picture/Roblox_Studio_2025_Logo.png',
+    wip:           true,
     gallery: [],
     featured: false,
     homeFeatured: false,

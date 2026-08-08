@@ -828,10 +828,41 @@ a[download].dl-anim svg {
   padding: 0 56px 56px;
 }
 
+.project-tag-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+
 .project-tag {
   font-size: 10px; font-weight: 600;
   letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 10px;
+  color: var(--muted);
+}
+
+/* Badge "Work in Progress" — réutilisé sur les cartes projet et la page de détail
+   Couleur ambre volontairement hors palette pour ressortir comme un statut ← MODIFIABLE */
+.wip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #17130c;
+  background: #E8A33D;
+  padding: 5px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.wip-badge::before {
+  content: '';
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: #17130c;
+  opacity: 0.55;
+}
+
+/* Sur la carte projet : posé en haut à gauche de l'image */
+.card-wip-badge {
+  position: absolute;
+  top: 12px; left: 12px;
+  z-index: 2;
 }
 
 .project-title {

@@ -61,7 +61,12 @@
 
     <!-- Texte positionné en bas de la bannière -->
     <div class="project-banner-content">
-      <div class="project-tag" id="projectTag"></div>
+      <div class="project-tag-row">
+        <div class="project-tag" id="projectTag"></div>
+        <!-- Badge "Work in Progress" — affiché seulement si project.wip === true dans data.js
+             Visibilité/texte gérés par renderProject() dans app.js ← MODIFIABLE -->
+        <span class="wip-badge" id="projectWipBadge" style="display:none">Work in Progress</span>
+      </div>
       <h1 class="project-title" id="projectTitle"></h1>
       <p class="project-subtitle" id="projectSubtitle"></p>
     </div>

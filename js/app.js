@@ -200,6 +200,8 @@ function buildCard(project) {
   /* Construction du HTML interne de la carte */
   a.innerHTML = `
     <div class="card-img">
+      <!-- Badge "Work in Progress" si project.wip === true dans data.js -->
+      ${project.wip ? `<span class="wip-badge card-wip-badge">Work in Progress</span>` : ''}
       ${imgUrl
         /* Si une image existe : balise img avec chargement différé (lazy) */
         ? `<img src="${imgUrl}" alt="${project.name}" loading="lazy">`
@@ -397,6 +399,10 @@ function renderProject() {
   setText('projectTag',      `${project.categoryLabel} · ${project.year}`);
   setText('projectTitle',    project.name);
   setText('projectSubtitle', project.shortDesc);
+
+  /* ── Badge "Work in Progress" (visible si project.wip === true) ──────── */
+  const wipBadgeEl = document.getElementById('projectWipBadge');
+  if (wipBadgeEl) wipBadgeEl.style.display = project.wip ? 'inline-flex' : 'none';
 
   /* ── Sidebar (informations rapides) ──────────────────────────────────── */
   setText('sideCategory', project.categoryLabel);
