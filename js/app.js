@@ -402,6 +402,14 @@ function renderProject() {
   setText('sideCategory', project.categoryLabel);
   setText('sideYear',     project.year);
 
+  /* ── Moteur de jeu (Unreal Engine 5 par défaut, sinon project.engineName/engineLogo) ── */
+  setText('sideEngineName', project.engineName || 'Unreal Engine 5');
+  const engineLogoEl = document.getElementById('sideEngineLogo');
+  if (engineLogoEl) {
+    engineLogoEl.src = project.engineLogo || 'picture/icons-unreal-engine-500.png';
+    engineLogoEl.alt = project.engineName || 'Unreal Engine';
+  }
+
   /* ── Liens plateforme (itch.io / Steam / GGJ) ───────────────────────── */
   const sidebar = document.querySelector('.project-sidebar');
   if (sidebar && (project.itchURL || project.steamURL || project.ggjURL)) {

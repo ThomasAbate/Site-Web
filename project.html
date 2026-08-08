@@ -102,13 +102,14 @@
         <div class="sidebar-label">Year</div>
         <div class="sidebar-value" id="sideYear"></div><!-- Ex: "2024" -->
       </div>
-      <!-- Moteur de jeu — affiché en dur (tous les projets utilisent UE5)
-           POUR MODIFIER : changer le texte ou l'image du logo ← MODIFIABLE -->
+      <!-- Moteur de jeu — Unreal Engine 5 par défaut, sauf si project.engineName /
+           project.engineLogo est défini dans data.js (ex: Slime Defender → Roblox Studio)
+           Injecté par renderProject() dans app.js ← MODIFIABLE -->
       <div class="sidebar-block">
         <div class="sidebar-label">Engine</div>
         <div class="sidebar-value sidebar-engine">
-          <img class="ue-logo" src="picture/icons-unreal-engine-500.png" alt="Unreal Engine" aria-hidden="true">
-          Unreal Engine 5
+          <img class="ue-logo" id="sideEngineLogo" src="picture/icons-unreal-engine-500.png" alt="Unreal Engine" aria-hidden="true">
+          <span id="sideEngineName">Unreal Engine 5</span>
         </div>
       </div>
     </aside>
