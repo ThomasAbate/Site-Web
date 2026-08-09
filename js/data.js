@@ -316,6 +316,7 @@ const PROJECTS = [
     wip:           true,
     gallery: [
       { slug: 'picture/slime-defender/gallery-mode-solo.png',   title: 'Solo Mode' },
+      { slug: 'picture/slime-defender/gallery-intro-1v1.png',   title: '1v1 Intro Sequence' },
       { slug: 'picture/slime-defender/gallery-leaderbords.png', title: 'Leaderboards' },
     ],
     featured: false,
