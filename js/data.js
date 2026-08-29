@@ -283,46 +283,6 @@ const PROJECTS = [
     featured: false,
     homeFeatured: false,
   },
-  {
-    id:            'slime-defender',
-    name:          'Slime Defender',
-    category:      'personal',
-    categoryLabel: 'Personal Project',
-    year:          '2026',
-    shortDesc:     'Roblox tower-defense hybrid blending solo progression with 1v1 economic warfare',
-    intro:         "A Roblox game built around a single idea : every choice should have a price. From the solo difficulty setting to the 1v1 budget, comfort and pressure are always opposing options, never a free one.",
-    bullets: [
-      {
-        title: 'Player-Scaled Solo Progression',
-        text:  "Solo runs open with a difficulty choice : lower settings ease the pressure but shrink the payout, so comfort always comes at a price.<ul><li><strong>Two Routes</strong> : Level Selection offers a structured, readable progression with clear objectives, while Endless Mode keeps paying out for every wave survived as difficulty climbs continuously, one rewards completion, the other rewards commitment.</li><li><strong>Dual Currency</strong> : Tickets buy cosmetics, while Power is the long-term score, earned through missions or endless survival and scaled by the chosen difficulty. Playing safe is always allowed, it just climbs slower.</li></ul>",
-      },
-      {
-        title: 'Competitive 1v1 Economy',
-        text:  "Every multiplayer match is a budget problem : the same currency buys towers to protect your own lane or enemies to send into your opponent's, so spending on defense always means giving up pressure.<ul><li><strong>Intro Sequence</strong> : Matches open on a Tekken-style intro where both players see each other's unlocked cosmetics, putting the rewards earned in solo on display the moment the opponent is paying attention.</li><li><strong>No Neutral Turn</strong> : Because offense and defense draw from the same shared budget, every spending decision opens a trade-off with no safe default.</li></ul>",
-      },
-      {
-        title: 'Social & Status Systems',
-        text:  "Cosmetics earned in solo carry over into multiplayer, turning a private grind into public status.<ul><li><strong>Tower Trading</strong> : Players can give towers to one another, creating an economy between players rather than just between the player and the game.</li><li><strong>Friendly Duels & Invites</strong> : A dedicated duel mode lets players face friends outside ranked play, supported by an invite system where a player already in a match can pull a friend browsing the Roblox interface directly into their server.</li></ul>",
-      },
-      {
-        title: 'Multi-Track Leaderboards',
-        text:  "Three leaderboards target three different player profiles, so no play style is left without a long-term goal.<ul><li><strong>Power</strong> ranks the strongest solo players and rewards long endless runs.</li><li><strong>Ranked</strong> drives rivalry in multiplayer.</li><li><strong>Playtime</strong> is open to everyone regardless of skill, rewarding presence alone.</li></ul>",
-      },
-    ],
-    mainImageSlug: 'picture/slime-defender/gallery-intro-1v1.png',
-    trailerID:     null,
-    engineName:    'Roblox Studio',
-    engineLogo:    'picture/Roblox_Studio_2025_Logo.png',
-    wip:           true,
-    gallery: [
-      { slug: 'picture/slime-defender/gallery-mode-solo.png',   title: 'Solo Mode' },
-      { slug: 'picture/slime-defender/gallery-intro-1v1.png',   title: '1v1 Intro Sequence' },
-      { slug: 'picture/slime-defender/gallery-leaderbords.png', title: 'Leaderboards' },
-    ],
-    featured: false,
-    homeFeatured: false,
-  },
-
   /* ════════════════════════════════════════════════
      SCHOOL — Projets scolaires (ARTFX)
   ════════════════════════════════════════════════ */
