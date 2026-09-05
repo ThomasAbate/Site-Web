@@ -311,7 +311,7 @@ const PROJECTS = [
     mainImageSlug: 'picture/fk-this-job/main.png',
     trailerID:     'mSV1teYZh-c',
     itchURL:       'https://artfx-school.itch.io/fuck-this-job',
-    steamURL:      'placeholder',
+    steamURL:      'https://store.steampowered.com/app/4822520/Fuck_This_Job/',
     gallery: [
       /* — Autre — */
       { slug: 'picture/fk-this-job/Gallery-FeedBack For Player.jpg',                      title: 'Feedback For Player' },
